@@ -16,6 +16,10 @@
   "scripts": {
     "test": "wdio"
   },
+   "repository": {
+    "type": "git",
+    "url": "https://github.com/Varunmca/WebdriverIO.git"
+  },
   "author": "",
   "license": "ISC"
 }
