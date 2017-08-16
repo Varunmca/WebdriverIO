@@ -10,7 +10,8 @@
     "wdio-spec-reporter": "^0.1.0"
   },
   "devDependencies": {
-    "wdio-allure-reporter": "^0.1.2"
+    "wdio-allure-reporter": "^0.1.2",
+    "wdio-junit-reporter": "^0.3.0"
   },
   "scripts": {
     "test": "wdio"
