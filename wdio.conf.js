@@ -122,10 +122,13 @@ exports.config = {
     // The only one supported by default is 'dot'
     // see also: http://webdriver.io/guide/testrunner/reporters.html
     //reporters: ['spec'][CustomReporter],
-    reporters: ['spec','allure'],
+    reporters: ['spec','allure','junit'],
     reporterOptions: {
         allure:{    
         outputDir: './HTMLReport'
+        },
+		junit: {
+            outputDir: './JUNITReport'
         }
     },
     //

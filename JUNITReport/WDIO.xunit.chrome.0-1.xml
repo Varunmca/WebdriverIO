@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="login_form" timestamp="2017-08-16T14:02:10" time="36.799" tests="2" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="3c16d83f63592e1092651b1c1bccf927"/>
+      <property name="suiteName" value="login form"/>
+      <property name="capabilities" value="chrome"/>
+      <property name="file" value=".\test\login\Login.spec.js"/>
+    </properties>
+    <testcase classname="chrome.login_form" name="should_deny_access_with_wrong_creds" time="16.496">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4a14834-1e11-42d3-b2de-01dbafd975b0/url - {"url":"http://valleystagingelb-906687222.us-west-2.elb.amazonaws.com/"}
+RESULT: {"state":"success","sessionId":"c4a14834-1e11-42d3-b2de-01dbafd975b0","hCode":32710912,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4a14834-1e11-42d3-b2de-01dbafd975b0/element - {"using":"id","value":"username"}
+RESULT: {"state":"success","sessionId":"c4a14834-1e11-42d3-b2de-01dbafd975b0","hCode":28953352,"value":{"ELEMENT":"0"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4a14834-1e11-42d3-b2de-01dbafd975b0/element/0/clear - {}
+RESULT: {"state":"success","sessionId":"c4a14834-1e11-42d3-b2de-01dbafd975b0","hCode":11057651,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4a14834-1e11-42d3-b2de-01dbafd975b0/element/0/value - {"value":["1","0","0","2","1","w","w"],"text":"10021ww"}
+RESULT: {"state":"success","sessionId":"c4a14834-1e11-42d3-b2de-01dbafd975b0","hCode":21285720,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4a14834-1e11-42d3-b2de-01dbafd975b0/element - {"using":"id","value":"password"}
+RESULT: {"state":"success","sessionId":"c4a14834-1e11-42d3-b2de-01dbafd975b0","hCode":6002998,"value":{"ELEMENT":"1"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4a14834-1e11-42d3-b2de-01dbafd975b0/element/1/clear - {}
+RESULT: {"state":"success","sessionId":"c4a14834-1e11-42d3-b2de-01dbafd975b0","hCode":28831382,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4a14834-1e11-42d3-b2de-01dbafd975b0/element/1/value - {"value":["p","a","s","s","p","a","s","s"],"text":"passpass"}
+RESULT: {"state":"success","sessionId":"c4a14834-1e11-42d3-b2de-01dbafd975b0","hCode":30366983,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4a14834-1e11-42d3-b2de-01dbafd975b0/element - {"using":"id","value":"btn_login"}
+RESULT: {"state":"success","sessionId":"c4a14834-1e11-42d3-b2de-01dbafd975b0","hCode":31990074,"value":{"ELEMENT":"2"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4a14834-1e11-42d3-b2de-01dbafd975b0/element/2/click - {}
+RESULT: {"state":"success","sessionId":"c4a14834-1e11-42d3-b2de-01dbafd975b0","hCode":30713914,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/c4a14834-1e11-42d3-b2de-01dbafd975b0/title - {}
+RESULT: {"state":"success","sessionId":"c4a14834-1e11-42d3-b2de-01dbafd975b0","hCode":9590556,"value":"Valley Order Site","class":"org.openqa.selenium.remote.Response","status":0}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.login_form" name="should_allow_access_with_correct_creds" time="20.301">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4a14834-1e11-42d3-b2de-01dbafd975b0/url - {"url":"http://valleystagingelb-906687222.us-west-2.elb.amazonaws.com/"}
+RESULT: {"state":"success","sessionId":"c4a14834-1e11-42d3-b2de-01dbafd975b0","hCode":6392726,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4a14834-1e11-42d3-b2de-01dbafd975b0/element - {"using":"id","value":"username"}
+RESULT: {"state":"success","sessionId":"c4a14834-1e11-42d3-b2de-01dbafd975b0","hCode":13039632,"value":{"ELEMENT":"3"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4a14834-1e11-42d3-b2de-01dbafd975b0/element/3/clear - {}
+RESULT: {"state":"success","sessionId":"c4a14834-1e11-42d3-b2de-01dbafd975b0","hCode":19291421,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4a14834-1e11-42d3-b2de-01dbafd975b0/element/3/value - {"value":["1","0","0","2","1"],"text":"10021"}
+RESULT: {"state":"success","sessionId":"c4a14834-1e11-42d3-b2de-01dbafd975b0","hCode":2619783,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4a14834-1e11-42d3-b2de-01dbafd975b0/element - {"using":"id","value":"password"}
+RESULT: {"state":"success","sessionId":"c4a14834-1e11-42d3-b2de-01dbafd975b0","hCode":2365569,"value":{"ELEMENT":"4"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4a14834-1e11-42d3-b2de-01dbafd975b0/element/4/clear - {}
+RESULT: {"state":"success","sessionId":"c4a14834-1e11-42d3-b2de-01dbafd975b0","hCode":32168539,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4a14834-1e11-42d3-b2de-01dbafd975b0/element/4/value - {"value":["p","a","s","s","p","a","s","s"],"text":"passpass"}
+RESULT: {"state":"success","sessionId":"c4a14834-1e11-42d3-b2de-01dbafd975b0","hCode":16453904,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4a14834-1e11-42d3-b2de-01dbafd975b0/element - {"using":"id","value":"btn_login"}
+RESULT: {"state":"success","sessionId":"c4a14834-1e11-42d3-b2de-01dbafd975b0","hCode":3691097,"value":{"ELEMENT":"5"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4a14834-1e11-42d3-b2de-01dbafd975b0/element/5/click - {}
+RESULT: {"state":"success","sessionId":"c4a14834-1e11-42d3-b2de-01dbafd975b0","hCode":7989555,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/c4a14834-1e11-42d3-b2de-01dbafd975b0/title - {}
+RESULT: {"state":"success","sessionId":"c4a14834-1e11-42d3-b2de-01dbafd975b0","hCode":13458643,"value":"Home Page","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/c4a14834-1e11-42d3-b2de-01dbafd975b0/screenshot - {}
+RESULT: {"state":"success","sessionId":"c4a14834-1e11-42d3-b2de-01dbafd975b0","hCode":8978600,"value":"[base64] 98200 bytes","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: DELETE http://127.0.0.1:4444/wd/hub/session/c4a14834-1e11-42d3-b2de-01dbafd975b0 - {}
+RESULT: {"state":"success","sessionId":"c4a14834-1e11-42d3-b2de-01dbafd975b0","hCode":14395319,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+]]>
+      </system-out>
+    </testcase>
+  </testsuite>
+</testsuites>
