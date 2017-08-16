@@ -1,0 +1,20 @@
+{
+  "name": "sampletest",
+  "version": "1.0.0",
+  "description": "demo test",
+  "main": "wdio.conf.js",
+  "dependencies": {
+    "selenium-standalone": "^6.6.0",
+    "wdio-mocha-framework": "^0.5.10",
+    "wdio-selenium-standalone-service": "^0.0.9",
+    "wdio-spec-reporter": "^0.1.0"
+  },
+  "devDependencies": {
+    "wdio-allure-reporter": "^0.1.2"
+  },
+  "scripts": {
+    "test": "wdio"
+  },
+  "author": "",
+  "license": "ISC"
+}
